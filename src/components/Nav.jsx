@@ -22,7 +22,7 @@ export default (props) => {
     return (
         <nav style={{ backgroundColor: '#eeeeef', height: '40px', display: "flex", justifyContent: 'flex-start' }}>
 
-            <Tooltip content={today} direction="right">
+            <Tooltip content={today} direction="bottom">
                 <Label>
                     {dateState.toLocaleString('en-US', {
                         hour: 'numeric',
