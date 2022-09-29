@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Label from "./Label";
 import Tooltip from "./Tooltip";
 
-export default (props) => {
+export default (props:any) => {
 
     const [dateState, setDateState] = useState(new Date());
 
@@ -12,10 +12,10 @@ export default (props) => {
         }, 1000);
     }, []);
 
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
+    var today:any = new Date();
+    var dd:any = String(today.getDate()).padStart(2, '0');
+    var mm:any = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy:any = today.getFullYear();
 
     today = mm + '/' + dd + '/' + yyyy;
 

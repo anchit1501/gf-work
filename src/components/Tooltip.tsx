@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Tooltip.css";
 
-const Tooltip = (props) => {
-  let timeout;
+const Tooltip = (props:any) => {
+  let timeout:any;
   const [active, setActive] = useState(false);
 
   const showTip = () => {
